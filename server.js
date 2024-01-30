@@ -5,7 +5,7 @@ const users = []
 
 app.use(express.json())
 
-app.get('/users', (req, res) => { // end point, callback. the callback is a middleware
+app.get('/users', (req, res) => {
     res.json(users)
 })
 app.post('/users', async (req, res) => {
